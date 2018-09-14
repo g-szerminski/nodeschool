@@ -1,1 +1,2 @@
-console.log('text');
+//console.log('HELLO WORLD');
+console.log(process.argv);
