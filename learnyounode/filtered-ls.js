@@ -1,11 +1,28 @@
 const fs = require('fs');
 const path = require('path');
+const ext = '.' + process.argv[3];
 
-const readDir = fs.readdir(process.argv[2], 'UTF-8', function callback (err, list) { 
-    if (err) {
-        console.log(err);
-    } else {
-        const txtFiles = list.path.extname('txt');
-        const newLine = list.split('\n').length - 1;
-    }
+fs.readdir(process.argv[2], function (err, list) {
+	if (err) return console.error(err);
+	list.forEach(function (file) {
+		if (path.extname(file) === ext) {
+			console.log(file);
+		}
+	})
 });
+
+//------------------------------------------------------
+// Dla plików z rozszerzeniem .txt
+
+//const fs = require('fs');
+//const path = require('path');
+//const ext = ('.txt');
+//
+//fs.readdir(process.argv[2], function (err, list) {
+//	if (err) return console.error(err);
+//	list.forEach(function (file) {
+//		if (path.extname(file) === ext) {
+//			console.log(file);
+//		}
+//	})
+//});
