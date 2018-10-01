@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/g-szerminski/nodeschool/issues"
   },
-  "homepage": "https://github.com/g-szerminski/nodeschool#readme"
+  "homepage": "https://github.com/g-szerminski/nodeschool#readme",
+  "dependencies": {
+    "bl": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/bl": "^0.8.32"
+  }
 }
