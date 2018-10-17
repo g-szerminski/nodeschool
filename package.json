@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/g-szerminski/nodeschool#readme",
   "dependencies": {
-    "bl": "^2.1.2"
+    "bl": "^2.1.2",
+    "net": "^1.0.2"
   },
   "devDependencies": {
     "@types/bl": "^0.8.32"
