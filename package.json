@@ -2,7 +2,7 @@
   "name": "nodeschool",
   "version": "1.0.0",
   "description": "",
-  "main": "książka.js",
+  "main": "nodeschool",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
