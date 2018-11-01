@@ -8,7 +8,6 @@
 
   const worker = example => lodash.filter(example, {active: true});
 
-
   // const worker = function (example) {
   // 	return lodash.filter(example, {active: true});
   // };
