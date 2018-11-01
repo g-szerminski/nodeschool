@@ -6,8 +6,11 @@
     { id: 24, username: "linda",  active: false}
   ];
 
-  const worker = function (example) {
-  	return lodash.filter(example, {active: true});
-  };
+  const worker = example => lodash.filter(example, {active: true});
+
+
+  // const worker = function (example) {
+  // 	return lodash.filter(example, {active: true});
+  // };
 
   module.exports = worker;
