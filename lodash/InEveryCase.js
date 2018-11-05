@@ -1,4 +1,4 @@
- const lodash = require("lodash");
+ const lodash = require('lodash');
 
     const worker = function(city) {
         return lodash.forEach(city, function(item) {
