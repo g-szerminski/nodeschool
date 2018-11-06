@@ -1,9 +1,9 @@
-const lodash = require("lodash");
+const lodash = require('lodash');
 
 var townList = function (item) {
 	var rusult = {
-		hot = [],
-		warm = []
+		hot: [],
+		warm: []
 	};
 
 	const checkTemp = function (item) {
