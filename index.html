@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		const lodash = require('lodash');
+
+var townList = function (item) {
+	var rusult = {
+		hot: [],
+		warm: []
+	};
+
+	const checkTemp = function (item) {
+		item > 19;
+		return item;
+	};
+	// var checkTemp = (item) => item > 19;
+
+	lodash.forEach(item, function (town, townName) {
+		if (lodash.every(town, checkTemp)) {
+			result.hot.push(townName);
+		} else if (lodash.some(town, checkTemp)) {
+			result.warm.push(townName);
+		}
+	});
+	return result;
+};
+
+module.exports = townList;
+
+	</script>
+</body>
+</html>
