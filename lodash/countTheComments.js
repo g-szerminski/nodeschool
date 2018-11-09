@@ -1,15 +1,21 @@
 const lodash = require('lodash');
 
 const countedComments = function(arr) {
-	return lodash.chain(countedComments)
-	
+	return lodash.chain(arr)
+	.groupBy('username')
+	.map(function(item, name) {
+		return {username: name, comment_count: lodash.size(item)}
+	})
+	.sortBy(function(counted) {
+		return -counted['comment_count'];
+	})
 };
 
 module.exports = countedComments;
 
 
 
-
+// Alternative solution
 
 // const lodash = require('lodash');
 
